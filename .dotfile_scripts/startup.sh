@@ -1,2 +1,2 @@
 #!/bin/bash
-cd ~ && git pull origin master
+su -- indykoning -c "cd ~ && git pull origin master"
