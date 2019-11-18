@@ -1,5 +1,5 @@
 set nocompatible
-
+" Test
 " --- Vundle setup ---
 " To install Vundle run `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 " To install the plugins run `Vim +PluginInstall`
