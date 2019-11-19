@@ -1,0 +1,65 @@
+#####################
+# ALIASES #
+######################
+
+#---------------------
+# BASH PROFILE #
+#---------------------
+alias profile='vim ~/.zshrc'
+alias src='source ~/.zshrc && clear'
+
+#---------------------
+# GIT #
+#---------------------
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+alias gb='git branch'
+alias gco='git checkout'
+alias nbr='git checkout -b'
+alias chbr='git checkout'
+alias gpp='git pull upstream develop; git push origin develop &'
+
+#---------------------
+# COMPOSER #
+#---------------------
+alias ci='composer install'
+alias cr='composer require'
+
+#---------------------
+# YARN #
+#---------------------
+alias yi='yarn'
+alias ya='yarn add'
+alias yr='yarn remove'
+alias yrd='yarn run dev'
+alias yrw='yarn run watch'
+
+#---------------------
+# NPM #
+#---------------------
+alias ni='npm install'
+alias nr='npm remove'
+alias nrd='npm run dev'
+alias nrw='npm run watch'
+
+#---------------------
+# LARAVEL #
+#---------------------
+alias pa='php artisan'
+alias pas='php artisan serve'
+alias pam='php artisan migrate'
+alias pams='php artisan migrate --seed'
+
+#---------------------
+# MAGENTO #
+#---------------------
+alias m='bin/magento'
+alias msu='bin/magento setup:upgrade'
+alias mcc='bin/magento cache:clean'
+alias mcf='bin/magento cache:flush'
+alias mca='bin/magento cache:clean && bin/magento cache:flush'
+alias cleanup2='rm -rf generated/code var/cache var/view_preprocessed pub/static; bin/magento cache:flush'
+alias mir='bin/magento indexer:reindex'
+alias msetup='(composer install --ignore-platform-reqs && bin/magento setup:upgrade)'

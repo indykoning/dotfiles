@@ -1,3 +1,5 @@
 *
 !.vimrc
 !.dotfile_scripts/*
+!.zshrc
+!.general_aliases
