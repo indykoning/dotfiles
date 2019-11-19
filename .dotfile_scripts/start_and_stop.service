@@ -1,7 +1,7 @@
 [Unit]
 Description=Run Scripts at Start and Stop
-After=network.target networking.service network-online.target nss-lookup.target systemd-resolved
-Requires=network.target networking.service network-online.target nss-lookup.target systemd-resolved
+After=network.target networking.service network-online.target nss-lookup.target systemd-resolved.service
+Requires=network.target networking.service network-online.target nss-lookup.target systemd-resolved.service
 
 [Service]
 Type=oneshot
