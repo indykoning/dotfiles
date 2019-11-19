@@ -1,0 +1,13 @@
+[Unit]
+Description=Run Scripts at Start and Stop
+After=network.target networking.service network-online.target nss-lookup.target systemd-resolved
+Requires=network.target networking.service network-online.target nss-lookup.target systemd-resolved
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/home/indykoning/.dotfile_scripts/startup.sh
+ExecStop=/home/indykoning/.dotfile_scripts/shutdown.sh
+
+[Install]
+WantedBy=multi-user.target
