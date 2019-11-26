@@ -1,0 +1,11 @@
+alias artisan="php artisan"
+
+alias parsec="(parsecd app_daemon=1 & PARSEC_PID=$! && chromium-browser --process-per-tab --app=https://ui.parsecgaming.com/ && pkill parsec)"
+alias scratch="scratch-text-editor"
+# Update/upgrade/etc.
+alias update="sudo apt-get update"
+alias upgrade="update && sudo apt-get upgrade"
+alias dist-upgrade="upgrade && sudo apt-get dist-upgrade"
+
+alias subl="sh ~/.config/sublime-text-3/launch.sh"
+alias open="xdg-open"

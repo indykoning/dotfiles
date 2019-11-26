@@ -59,5 +59,11 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-source $HOME/.aliases
+[ -f $HOME/.aliases ] && source $HOME/.aliases
 source $HOME/.general_aliases
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    [ -f $HOME/.linux_aliases ] && source $HOME/.linux_aliases
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    [ -f $HOME/.osx_aliases ] && source $HOME/.osx_aliases
+fi
+
