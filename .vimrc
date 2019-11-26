@@ -49,16 +49,19 @@ call vundle#end()
 filetype plugin indent on
 
 " --- General settings ---
-set backspace=indent,eol,start
-set ruler
-set number
+set backspace=indent,eol,start " Delete everything
+set ruler          " Show cursor position
+set number         " Show numbers
 set showcmd
-set incsearch
-set hlsearch
-set mouse=a
-set tabstop=4
-set shiftwidth=4
-set expandtab
+set incsearch      " Show partial matches for a search phrase
+set hlsearch       " Enable highlight search
+set mouse=a        " Enable mouse control
+set tabstop=4      " Tab size
+set shiftwidth=4   " Indentation size
+set expandtab      " Turn tabs to spaces
+set showmatch      " Show matching brackets
+"set termguicolors  " Enable true colors
+set autoread       " Reload file on external change
 
 " We need this for plugins like Syntastic and vim-gitgutter which put symbols
 " in the sign column.
