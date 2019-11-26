@@ -51,6 +51,7 @@ alias pa='php artisan'
 alias pas='php artisan serve'
 alias pam='php artisan migrate'
 alias pams='php artisan migrate --seed'
+alias phpunit="vendor/bin/phpunit"
 
 #---------------------
 # MAGENTO #
@@ -63,3 +64,17 @@ alias mca='bin/magento cache:clean && bin/magento cache:flush'
 alias cleanup2='rm -rf generated/code var/cache var/view_preprocessed pub/static; bin/magento cache:flush'
 alias mir='bin/magento indexer:reindex'
 alias msetup='(composer install --ignore-platform-reqs && bin/magento setup:upgrade)'
+
+#---------------------
+# GENERAL #
+#---------------------
+
+# Get dns info
+function digga() {
+	dig +nocmd "$1" any +multiline +noall +answer
+}
+
+# Download all assets for page
+function scrapeUrl() {
+    wget --adjust-extension --convert-links --page-requisites --span-hosts --no-host-directories "$1"
+}
