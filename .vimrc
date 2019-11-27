@@ -63,6 +63,12 @@ set showmatch      " Show matching brackets
 "set termguicolors  " Enable true colors
 set autoread       " Reload file on external change
 
+" Allow capital version of wq
+command! Q q
+command! W w
+command! Wq wq
+command! WQ wq
+
 " We need this for plugins like Syntastic and vim-gitgutter which put symbols
 " in the sign column.
 hi clear SignColumn
