@@ -23,6 +23,7 @@ Thumbs.db
 
 # Sublime Text
 *.sublime-project
+.phpintel
 
 # Node
 node_modules
