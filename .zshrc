@@ -67,3 +67,4 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     [ -f $HOME/.osx_aliases ] && source $HOME/.osx_aliases
 fi
 
+export RPROMPT="%D{%H:%M:%S}"
