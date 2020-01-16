@@ -38,6 +38,7 @@ plugins=(
   laravel4
   zsh-syntax-highlighting
   extract
+  command-not-found
 )
 
 source $ZSH/oh-my-zsh.sh
