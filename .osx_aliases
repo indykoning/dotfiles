@@ -35,8 +35,10 @@ alias cssgrid='msetup && cd vendor/justbetter/magento2mix && sh mix.sh -i ; cd .
 alias sublime="screen -md sh ~/Library/Application\ Support/Sublime\ Text\ 3/launch-osx.sh"
 alias subl="sublime"
 
+plugins+=(jira)
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/usr/local/sbin:$PATH"
-#export PATH="/usr/local/opt/valet-php@7.2/bin:$PATH"
+PROJECT_PATHS=(~/websites)

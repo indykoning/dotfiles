@@ -23,7 +23,7 @@ ZSH_THEME="agnoster"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -35,12 +35,20 @@ plugins=(
   composer
   zsh-autosuggestions
   command-not-found
-  laravel4
+  laravel
   zsh-syntax-highlighting
   extract
   command-not-found
+  colored-man-pages
+  pj
+  safe-paste
+  thefuck
+  timer
+  yarn
+  zsh-navigation-tools
 )
 
+# plugins+=(profiles)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -69,4 +77,4 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     [ -f $HOME/.osx_aliases ] && source $HOME/.osx_aliases
 fi
 
-export RPROMPT="%D{%H:%M:%S}"
+# export RPROMPT="%D{%H:%M:%S}"
