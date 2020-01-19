@@ -29,7 +29,7 @@ alias gco='git checkout'
 alias nbr='git checkout -b'
 alias chbr='git checkout'
 alias gpp='git pull upstream `git rev-parse --abbrev-ref HEAD`; git push origin `git rev-parse --abbrev-ref HEAD` &'
-alias commitmsg='print $(curl -s whatthecommit.com|\grep "<p>"|sed "s/<p>//g")'
+alias commitmsg='print $(curl -s whatthecommit.com/index.txt)'
 
 #---------------------
 # COMPOSER #
