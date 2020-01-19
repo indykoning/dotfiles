@@ -16,3 +16,16 @@ Simply move the `.logouthook` file to your home directory and make it executable
 $ cp ~/.dotfile_scripts/.logouthook ~/.logouthook
 $ chmod 755 ~/.logouthook
 ```
+### Linux
+Linux is a lot easier to set up with only one service needed for both starting up and shutting down.
+#### Startup & Shutdown
+For Linux it is as easy as copying the service to `/etc/systemd/system/start_and_stop.service`
+and then enabling the service.
+```
+$ sudo cp ~/.dotfile_scripts/start_and_stop.service /etc/systemd/system/start_and_stop.service
+$ systemctl enable start_and_stop 
+```
+## Adding new files
+By default every file is ignored since it is a bad idea to upload your whole home folder to github.
+To add a new file to the respository you have to add it by force: `git add -f <filename>`
+After which it will automatically be added and pushed the next times you edit the file.
