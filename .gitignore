@@ -4,3 +4,6 @@
 !.zshrc
 !.general_aliases
 !.jshintrc
+!.linux_aliases
+!.osx_aliases
+!.global_gitignore
