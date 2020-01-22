@@ -44,4 +44,5 @@ export PATH="/usr/local/sbin:$PATH"
 PROJECT_PATHS=(
     ~/websites
     ~/modules
+    ~/.valet/Sites
 )
