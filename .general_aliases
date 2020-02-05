@@ -30,6 +30,7 @@ alias nbr='git checkout -b'
 alias chbr='git checkout'
 alias gpp='git pull upstream `git rev-parse --abbrev-ref HEAD` --recurse-submodules; git push origin `git rev-parse --abbrev-ref HEAD` &'
 alias commitmsg='print $(curl -s whatthecommit.com/index.txt)'
+alias pup='phpunit && git push'
 
 #---------------------
 # COMPOSER #
