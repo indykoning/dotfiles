@@ -94,3 +94,7 @@ function scrapeUrl() {
 function cheat {
     curl -s cheat.sh/$1 | less
 }
+
+function fixDist() {
+    COMPOSER_MEMORY_LIMIT=-1 composer remove $1; COMPOSER_MEMORY_LIMIT=-1 composer require $1:$2
+}
