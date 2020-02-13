@@ -6,7 +6,7 @@
 # BASH #
 #---------------------
 alias profile='vim ~/.zshrc'
-alias src='source ~/.zshrc && clear'
+alias src='source ~/.zshrc'
 alias fdir='find . -type d -name'    # Attempt to find direcotory
 alias ffil='find . -type f -name'    # Attempt to find file
 alias parrot='curl -s parrot.live'
@@ -31,6 +31,20 @@ alias chbr='git checkout'
 alias gpp='git pull upstream `git rev-parse --abbrev-ref HEAD` --recurse-submodules; git push origin `git rev-parse --abbrev-ref HEAD` &'
 alias commitmsg='print $(curl -s whatthecommit.com/index.txt)'
 alias pup='phpunit && git push'
+function resetToUpstream() {
+    if [ "$1" = "" ]; then
+        branch=$(git rev-parse --abbrev-ref HEAD)
+    else
+        branch=$1
+    fi
+
+    if [ "$branch" = "master" ]; then
+        git checkout develop
+    else
+        git checkout master
+    fi
+    git branch -D $branch; git checkout upstream/$branch; git checkout -b $branch
+}
 
 #---------------------
 # COMPOSER #
