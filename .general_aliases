@@ -94,6 +94,22 @@ alias msetup='(composer install --ignore-platform-reqs && bin/magento setup:upgr
 # GENERAL #
 #---------------------
 
+# Import db with warden
+function wimport() {
+if [[ ! -f "$1" ]]; then
+    echo "file does not exist"
+    return 0
+fi
+if [[ $1 == *.sql.gz ]]; then
+    pv $1 | gunzip -c | warden db import
+elif [[ $1 == *.sql ]]; then
+    pv $1 | warden db import
+else
+    echo "No recognised file extension."
+    return 0
+fi
+}
+
 # Get dns info
 function digga() {
 	dig +nocmd "$1" any +multiline +noall +answer
