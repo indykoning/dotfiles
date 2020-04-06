@@ -43,7 +43,7 @@ function resetToUpstream() {
     else
         git checkout master
     fi
-    git branch -D $branch; git checkout upstream/$branch; git checkout -b $branch
+    git branch -D $branch; git checkout --track upstream/$branch
 }
 
 #---------------------
