@@ -27,7 +27,7 @@ alias projects='cd ~/websites && clear'
 #---------------------
 # MAGENTO #
 #---------------------
-alias cssgrid='msetup && (cd vendor/justbetter/magento2mix && sh mix.sh -i ; cd ../../../ && sh mix.sh)'
+alias cssgrid='msetup && (cd vendor/justbetter/magento2mix && sh mix.sh -i ; cd ../../../ && sh mix.sh -ca)'
 
 #---------------------
 # Sublime #
