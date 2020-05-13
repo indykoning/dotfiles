@@ -15,16 +15,6 @@ alias smssh="sm server:ssh"
 alias lock='pmset displaysleepnow'
 
 #---------------------
-# BASH PROFILE #
-#---------------------
-alias phpini="vim /usr/local/etc/valet-php/7.2/php.ini"
-
-#---------------------
-# FOLDERS & PROJECTS #
-#---------------------
-alias projects='cd ~/websites && clear'
-
-#---------------------
 # MAGENTO #
 #---------------------
 alias cssgrid='msetup && (cd vendor/justbetter/magento2mix && sh mix.sh -i ; cd ../../../ && sh mix.sh -a)'
