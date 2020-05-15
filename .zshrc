@@ -47,7 +47,7 @@ plugins=(
   yarn
   zsh-navigation-tools
 )
-
+[ -f $HOME/.additional_plugins ] && source $HOME/.additional_plugins
 # plugins+=(profiles)
 source $ZSH/oh-my-zsh.sh
 
