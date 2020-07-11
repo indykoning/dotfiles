@@ -1,6 +1,6 @@
 *
 !.vimrc
-!.dotfile_scripts/*
+!.dotfile_scripts/
 !.zshrc
 !.general_aliases
 !.jshintrc
