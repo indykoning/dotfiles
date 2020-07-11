@@ -22,8 +22,8 @@ alias cssgrid='msetup && (cd vendor/justbetter/magento2mix && sh mix.sh -i ; cd 
 #---------------------
 # Sublime #
 #---------------------
-alias sublime="screen -md sh ~/Library/Application\ Support/Sublime\ Text\ 3/launch-osx.sh"
-alias subl="sublime"
+#alias sublime="screen -md sh ~/Library/Application\ Support/Sublime\ Text\ 3/launch-osx.sh"
+#alias subl="sublime"
 
 plugins+=(jira)
 
