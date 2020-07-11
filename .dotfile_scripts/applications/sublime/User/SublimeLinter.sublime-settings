@@ -1,0 +1,29 @@
+// SublimeLinter Settings - User
+{
+    "show_panel_on_save": "view",
+    "paths": {
+        "linux": ["/home/indykoning/.composer/vendor/bin"],
+        "osx": ["/Users/indykoning/.composer/vendor/bin/"],
+        "windows": []
+    },
+    "linters":{
+        "jshint":{
+            "args":["--config", "~/.jshintrc"]
+        },
+         "phpcs": {
+            "ignore_match": [
+                "Line exceeds",
+                "A file should declare"
+            ],
+            "standard": "PSR2"
+        },
+        "phpmd": {
+            "args": [
+                "--minimumpriority",
+                "2"
+            ],
+            "excludes": [],
+            "rulesets": "cleancode,codesize,controversial,design,naming,unusedcode"
+        }
+    }
+}

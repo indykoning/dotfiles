@@ -1,0 +1,71 @@
+{
+	"SublimeLinter.linters.phpcs.args": "--standard=PSR2",
+	"always_show_minimap_viewport": true,
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"node_modules/**"
+	],
+	"bold_folder_labels": true,
+	"close_windows_when_empty": true,
+	"color_scheme": "Monokai.sublime-color-scheme",
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.css.map",
+		"*.min.css",
+		"*Test.php"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"generated",
+		"var/cache",
+		"Test",
+		"node_modules/*/**",
+		"pub/static/*/**",
+		"pub/media/*/**"
+	],
+	"font_options":
+	[
+		"gray_antialias",
+		"subpixel_antialias"
+	],
+	"font_size": 9,
+	"git_gutter_show_line_annotation": false,
+	"ignored_packages":
+	[
+		"Color Highlighter",
+		"SublimeLinter-php",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
+	"scroll_past_end": true,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true
+}

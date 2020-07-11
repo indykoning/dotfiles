@@ -1,0 +1,8 @@
+[
+    // SublimePHPCompanion keys to find or use namespaces
+    { "keys": ["f9"], "command": "expand_fqcn" },
+    { "keys": ["f10"], "command": "find_use" },
+
+    // GotoDocumenation
+    { "keys": ["f1"], "command": "goto_documentation" }
+]
