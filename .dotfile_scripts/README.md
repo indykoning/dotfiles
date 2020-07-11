@@ -7,7 +7,7 @@ And of course add your remote as `origin` to actually pull and push your files.
 NOTE: Your computer does need read and write access to the repository. I suggest using the ssh way.
 ### OSX
 #### Startup & shutdown
-Add the OSX_Startup_shutdown.app script to the login items in:
+Add the OSX_Startup_Shutdown.app script to the login items in:
 `System Preferences > Users & Groups > <your user> > Login Items`
 ### Linux
 #### Startup & Shutdown
