@@ -7,5 +7,4 @@ alias update="sudo apt-get update"
 alias upgrade="update && sudo apt-get upgrade"
 alias dist-upgrade="upgrade && sudo apt-get dist-upgrade"
 
-alias subl="sh ~/.config/sublime-text-3/launch.sh"
 alias open="xdg-open"
