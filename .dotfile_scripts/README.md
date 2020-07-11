@@ -6,24 +6,16 @@ Edit the startup and shutdown scripts to use your username instead of mine.
 And of course add your remote as `origin` to actually pull and push your files.
 NOTE: Your computer does need read and write access to the repository. I suggest using the ssh way.
 ### OSX
-#### Startup
-Add the startup.app script to the login items in:
+#### Startup & shutdown
+Add the OSX_Startup_shutdown.app script to the login items in:
 `System Preferences > Users & Groups > <your user> > Login Items`
-NOTE: this sadly does not run the `shutdown.sh` file, but rather has the script embedded in the app.
-#### Shutdown
-Simply move the `.logouthook` file to your home directory and make it executable
-```
-$ cp ~/.dotfile_scripts/.logouthook ~/.logouthook
-$ chmod 755 ~/.logouthook
-```
 ### Linux
-Linux is a lot easier to set up with only one service needed for both starting up and shutting down.
 #### Startup & Shutdown
-For Linux it is as easy as copying the service to `/etc/systemd/system/start_and_stop.service`
+For Linux you'll have to copy the service to `/etc/systemd/system/start_and_stop.service`
 and then enabling the service.
 ```
 $ sudo cp ~/.dotfile_scripts/start_and_stop.service /etc/systemd/system/start_and_stop.service
-$ systemctl enable start_and_stop 
+$ systemctl enable start_and_stop
 ```
 ## Adding new files
 By default every file is ignored since it is a bad idea to upload your whole home folder to github.
