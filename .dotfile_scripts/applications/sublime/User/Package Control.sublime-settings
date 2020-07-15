@@ -32,6 +32,8 @@
 		"Laravel Blade Highlighter",
 		"Laravel Docs",
 		"LESS",
+		"LSP",
+		"LSP-intelephense",
 		"MagentoSnippets",
 		"MarkdownPreview",
 		"Minifier",
