@@ -82,7 +82,7 @@ alias phpunit="vendor/bin/phpunit"
 # MAGENTO #
 #---------------------
 alias m='bin/magento'
-alias msu='bin/magento setup:upgrade'
+alias msu='bin/magento setup:upgrade && bin/magento cache:disable full_page layout block_html'
 alias mcc='bin/magento cache:clean'
 alias mcf='bin/magento cache:flush'
 alias mca='bin/magento cache:clean && bin/magento cache:flush'
