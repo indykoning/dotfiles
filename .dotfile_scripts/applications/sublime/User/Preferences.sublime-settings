@@ -46,7 +46,7 @@
 		"gray_antialias",
 		"subpixel_antialias"
 	],
-	"font_size": 9,
+	"font_size": 12,
 	"git_gutter_show_line_annotation": false,
 	"ignored_packages":
 	[
