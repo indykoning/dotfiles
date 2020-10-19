@@ -38,7 +38,7 @@
 		".git",
 		".hg",
 		"CVS",
-		"var/cache",
+		"var/cache"
 	],
 	"font_options":
 	[
