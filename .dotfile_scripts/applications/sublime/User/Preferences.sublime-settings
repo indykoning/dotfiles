@@ -16,7 +16,12 @@
 		"*.swf",
 		"*.jar",
 		"*.zip",
-		"node_modules/**"
+		"node_modules/**",
+		"*Test.php",
+		"Test",
+		"generated",
+		"pub/static/*/**",
+		"pub/media/*/**"
 	],
 	"bold_folder_labels": true,
 	"close_windows_when_empty": true,
@@ -25,8 +30,7 @@
 	"file_exclude_patterns":
 	[
 		"*.css.map",
-		"*.min.css",
-		"*Test.php"
+		"*.min.css"
 	],
 	"folder_exclude_patterns":
 	[
@@ -34,12 +38,7 @@
 		".git",
 		".hg",
 		"CVS",
-		"generated",
 		"var/cache",
-		"Test",
-		"node_modules/*/**",
-		"pub/static/*/**",
-		"pub/media/*/**"
 	],
 	"font_options":
 	[
