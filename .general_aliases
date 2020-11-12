@@ -11,12 +11,12 @@ alias fdir='find . -type d -name'    # Attempt to find direcotory
 alias ffil='find . -type f -name'    # Attempt to find file
 alias parrot='curl -s parrot.live'
 alias mkdir='mkdir -p -v'            # Make dirs recursively
-alias mktar='tar -cvf'               # turn into tar
-alias mkgz='tar -cvzf'               # turn into tar.gz
-alias untar='tar -xvf'               # untar
-alias ungz='tar -xvzf'               # untar.gz
-
-
+alias mktar='tar -cvf'               # Turn into tar
+alias mkgz='tar -cvzf'               # Turn into tar.gz
+alias untar='tar -xvf'               # Untar
+alias ungz='tar -xvzf'               # Untar.gz
+alias grep='grep --color=auto'       # Colorful grep
+alias ipinfo='echo "Internal info"; ifconfig; echo "\nExternal info:"; curl ifconfig.me/all' # Get ip information
 #---------------------
 # GIT #
 #---------------------
@@ -119,6 +119,9 @@ function digga() {
 function scrapeUrl() {
     wget --adjust-extension --convert-links --page-requisites --span-hosts --no-host-directories "$1"
 }
+
+# Manual for command
+rtfm() { help $@ || info $@ || man $@ || open "http://www.google.com/search?q=$@"; }
 
 # Pull up cheat sheet for command
 function cheat {
