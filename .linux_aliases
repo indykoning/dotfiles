@@ -8,6 +8,3 @@ alias upgrade="update && sudo apt-get upgrade"
 alias dist-upgrade="upgrade && sudo apt-get dist-upgrade"
 
 alias open="xdg-open"
-function clipboard() {
-    [ ! -t 0 ] && xclip -selection clipboard || xclip -selection clipboard -o"
-}

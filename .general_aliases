@@ -121,6 +121,11 @@ function scrapeUrl() {
     wget --adjust-extension --convert-links --page-requisites --span-hosts --no-host-directories "$1"
 }
 
+# Interact with clipboard, piping into or out of clipboard
+function clipboard() {
+    [ ! -t 0 ] && clipcopy || clippaste
+}
+
 # Manual for command
 rtfm() { help $@ || info $@ || man $@ || open "http://www.google.com/search?q=$@"; }
 
