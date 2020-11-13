@@ -5,6 +5,7 @@ DEFAULT_USER="$USER"
 # export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 #export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
 #export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+export CDPATH=:.:..:~
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"

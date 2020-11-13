@@ -13,6 +13,9 @@ alias smssh="sm server:ssh"
 # SYSTEM #
 #---------------------
 alias lock='pmset displaysleepnow'
+function clipboard() {
+    [ ! -t 0 ] && pbcopy || pbpaste
+}
 
 #---------------------
 # MAGENTO #

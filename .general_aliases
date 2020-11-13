@@ -17,6 +17,7 @@ alias untar='tar -xvf'               # Untar
 alias ungz='tar -xvzf'               # Untar.gz
 alias grep='grep --color=auto'       # Colorful grep
 alias ipinfo='echo "Internal info"; ifconfig; echo "\nExternal info:"; curl ifconfig.me/all' # Get ip information
+alias cd='>/dev/null cd'             # Don't show path it changed to if CDPATH is used
 #---------------------
 # GIT #
 #---------------------
