@@ -38,13 +38,21 @@ function resetToUpstream() {
     else
         branch=$1
     fi
+    git checkout $branch
+    git fetch upstream $branch
+    git reset --hard upstream/$branch
+}
 
-    if [ "$branch" = "master" ]; then
-        git checkout develop
-    else
-        git checkout master
-    fi
-    git branch -D $branch; git checkout --track upstream/$branch
+function release()
+{
+    current_release=$(git flow release list | head -1 | cut -d ' ' -f 2)
+    ORIGINAL_ORIGIN=$(git config --get gitflow.origin || echo origin)
+    git config gitflow.origin upstream
+    #git flow release finish $current_release -F -p -m"${current_release}"
+    echo $(git config --get gitflow.origin)
+    echo $current_release
+    git config gitflow.origin $ORIGINAL_ORIGIN
+    echo $(git config --get gitflow.origin)
 }
 
 #---------------------
