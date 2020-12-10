@@ -48,11 +48,13 @@ function release()
     current_release=$(git flow release list | head -1 | cut -d ' ' -f 2)
     ORIGINAL_ORIGIN=$(git config --get gitflow.origin || echo origin)
     git config gitflow.origin upstream
-    #git flow release finish $current_release -F -p -m"${current_release}"
-    echo $(git config --get gitflow.origin)
-    echo $current_release
+    git flow release finish $current_release -F -p -m"${current_release}"
+    git checkout master
+    git push upstream master --tags
+    git checkout develop
+    git push upstream develop
+    git push upstream :release/$current_release
     git config gitflow.origin $ORIGINAL_ORIGIN
-    echo $(git config --get gitflow.origin)
 }
 
 #---------------------
