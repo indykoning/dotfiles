@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:$HOME/.composer/vendor/bin
+export PATH=$PATH:$HOME/.composer/vendor/bin:./vendor/bin
 DEFAULT_USER="$USER"
 # export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 #export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
