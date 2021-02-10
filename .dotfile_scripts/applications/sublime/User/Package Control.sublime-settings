@@ -15,7 +15,7 @@
 		"Composer",
 		"ComputerCraft Package",
 		"DocBlockr",
-		"DocBlockr 2020 (DoxyDoxygen powered)",
+		"DocBlockr 2021 (DoxyDoxygen powered)",
 		"DotENV",
 		"EditorConfig",
 		"Emmet",
@@ -65,6 +65,7 @@
 		"Terminal",
 		"Terminus",
 		"TypeScript Syntax",
-		"Vue Syntax Highlight"
+		"Vue Syntax Highlight",
+		"Xdebug Client"
 	]
 }
