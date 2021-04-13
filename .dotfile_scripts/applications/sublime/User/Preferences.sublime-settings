@@ -21,7 +21,8 @@
 		"Test",
 		"generated",
 		"pub/static/*/**",
-		"pub/media/*/**"
+		"pub/media/*/**",
+		"**/dev/tests/**",
 	],
 	"bold_folder_labels": true,
 	"close_windows_when_empty": true,
