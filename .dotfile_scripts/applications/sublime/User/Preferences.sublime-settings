@@ -22,7 +22,7 @@
 		"generated",
 		"pub/static/*/**",
 		"pub/media/*/**",
-		"**/dev/tests/**",
+		"**/dev/tests/**"
 	],
 	"bold_folder_labels": true,
 	"close_windows_when_empty": true,
