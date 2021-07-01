@@ -75,6 +75,5 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     [ -f $HOME/.osx_aliases ] && source $HOME/.osx_aliases
 fi
 
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+[[ -s ~/.fig/fig.sh ]] && source ~/.fig/fig.sh
