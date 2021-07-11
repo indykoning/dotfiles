@@ -2,6 +2,8 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"BracketHighlighter",
+		"SublimeLinter-flake8",
 	],
 	"installed_packages":
 	[

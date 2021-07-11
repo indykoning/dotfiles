@@ -50,7 +50,9 @@
 	"git_gutter_show_line_annotation": false,
 	"ignored_packages":
 	[
+		"BracketHighlighter",
 		"Color Highlighter",
+		"SublimeLinter-flake8",
 		"SublimeLinter-php",
 		"Vintage",
 	],
