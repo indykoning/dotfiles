@@ -51,6 +51,7 @@
 	"ignored_packages":
 	[
 		"Color Highlighter",
+		"FileIcons Mono",
 		"SublimeLinter-php",
 		"Vintage",
 	],
