@@ -62,11 +62,12 @@
 		"SublimeLinter-pylint",
 		"SublimeLinter-xmllint",
 		"Sublimerge 3",
+		"Svelte",
 		"Tailwind CSS Autocomplete",
 		"Terminal",
 		"Terminus",
 		"TypeScript Syntax",
 		"Vue Syntax Highlight",
-		"Xdebug Client"
+		"Xdebug Client",
 	],
 }
