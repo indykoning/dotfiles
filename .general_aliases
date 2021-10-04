@@ -121,6 +121,11 @@ else
 fi
 }
 
+# Open database with default application
+db() {
+    open mysql://127.0.0.1/$1
+}
+
 # Get dns info
 function digga() {
 	dig +nocmd "$1" any +multiline +noall +answer
