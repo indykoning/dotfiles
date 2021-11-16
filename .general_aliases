@@ -19,6 +19,7 @@ alias grep='grep --color=auto'       # Colorful grep
 alias ipinfo='echo "Internal info"; ifconfig; echo "\nExternal info:"; curl ifconfig.me/all' # Get ip information
 alias cd='>/dev/null cd'             # Don't show path it changed to if CDPATH is used
 alias sshkey="clipboard < ~/.ssh/id_rsa.pub && echo 'Copied to clipboard.'" # Copy ssh key to clipboard
+
 #---------------------
 # GIT #
 #---------------------
@@ -30,9 +31,11 @@ alias gb='git branch'
 alias gco='git checkout'
 alias nbr='git checkout -b'
 alias chbr='git checkout'
-alias gpp='git pull upstream `git rev-parse --abbrev-ref HEAD` --recurse-submodules; git push origin `git rev-parse --abbrev-ref HEAD` &'
+alias gpp='git pull upstream `git rev-parse --abbrev-ref HEAD` --recurse-submodules; git push origin `git rev-parse --abbrev-ref HEAD` &' # Pull current branch from upstream and push to origin
 alias commitmsg='print $(curl -s whatthecommit.com/index.txt)'
 alias pup='phpunit && git push'
+
+# Change to the specified branch and reset it to upstream
 function resetToUpstream() {
     if [ "$1" = "" ]; then
         branch=$(git rev-parse --abbrev-ref HEAD)
@@ -44,8 +47,8 @@ function resetToUpstream() {
     git reset --hard upstream/$branch
 }
 
-function release()
-{
+# Use git flow to finish the release
+function release() {
     current_release=$(git flow release list | head -1 | cut -d ' ' -f 2)
     ORIGINAL_ORIGIN=$(git config --get gitflow.origin || echo origin)
     git config gitflow.origin upstream
@@ -63,6 +66,7 @@ function release()
 #---------------------
 alias ci='composer install'
 alias cr='composer require'
+alias grum='grumphp git:pre-commit'
 
 #---------------------
 # YARN #
@@ -88,7 +92,6 @@ alias pa='php artisan'
 alias pas='php artisan serve'
 alias pam='php artisan migrate'
 alias pams='php artisan migrate --seed'
-alias phpunit="vendor/bin/phpunit"
 
 #---------------------
 # MAGENTO #
@@ -108,18 +111,18 @@ alias msetup='(composer install --ignore-platform-reqs && bin/magento setup:upgr
 
 # Import db with warden
 function wimport() {
-if [[ ! -f "$1" ]]; then
-    echo "file does not exist"
-    return 0
-fi
-if [[ $1 == *.sql.gz ]]; then
-    pv $1 | gunzip -c | warden db import
-elif [[ $1 == *.sql ]]; then
-    pv $1 | warden db import
-else
-    echo "No recognised file extension."
-    return 0
-fi
+    if [[ ! -f "$1" ]]; then
+        echo "file does not exist"
+        return 0
+    fi
+    if [[ $1 == *.sql.gz ]]; then
+        pv $1 | gunzip -c | warden db import
+    elif [[ $1 == *.sql ]]; then
+        pv $1 | warden db import
+    else
+        echo "No recognised file extension."
+        return 0
+    fi
 }
 
 # Open database with default application
@@ -138,12 +141,18 @@ function scrapeUrl() {
 }
 
 # Interact with clipboard, piping into or out of clipboard
+# Example, base64 encode clipboard content: `clipboard | base64 | clipboard`
 function clipboard() {
     [ ! -t 0 ] && clipcopy || clippaste
 }
 
 # Manual for command
-rtfm() { help $@ || info $@ || man $@ || open "http://www.google.com/search?q=$@"; }
+rtfm() {
+    help $@ ||
+    info $@ ||
+    man $@ ||
+    open "http://www.google.com/search?q=$@"
+}
 
 # Pull up cheat sheet for command
 function cheat {
@@ -154,3 +163,10 @@ function fixDist() {
     COMPOSER_MEMORY_LIMIT=-1 composer remove $1; COMPOSER_MEMORY_LIMIT=-1 composer require $1:$2
 }
 
+# Clear some application caches and temporary files
+cleanmachine() {
+    rm -rf ~/.codeintel &;
+    composer cc &;
+    npm cache clean --force &;
+    yarn cache clean &;
+}

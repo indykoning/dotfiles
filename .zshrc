@@ -1,15 +1,8 @@
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
-# If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.composer/vendor/bin:./vendor/bin
 DEFAULT_USER="$USER"
-# export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-#export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
-#export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+
+# When using cd check the current dir, parent dir and home dir
 export CDPATH=:.:..:~
 
 # Path to your oh-my-zsh installation.
@@ -55,13 +48,11 @@ plugins=(
   zsh-navigation-tools
   cp
 )
+# Load additional plugins and configuration before loading oh-my-zsh
 [ -f $HOME/.additional_plugins ] && source $HOME/.additional_plugins
-# plugins+=(profiles)
+
+# Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -80,5 +71,5 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     [ -f $HOME/.osx_aliases ] && source $HOME/.osx_aliases
 fi
 
+# Load iterm2 shell integration if you're using iterm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-[[ -s ~/.fig/fig.sh ]] && source ~/.fig/fig.sh
