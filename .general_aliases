@@ -18,6 +18,7 @@ alias ungz='tar -xvzf'               # Untar.gz
 alias grep='grep --color=auto'       # Colorful grep
 alias ipinfo='echo "Internal info"; ifconfig; echo "\nExternal info:"; curl ifconfig.me/all' # Get ip information
 alias cd='>/dev/null cd'             # Don't show path it changed to if CDPATH is used
+alias sshkey="clipboard < ~/.ssh/id_rsa.pub && echo 'Copied to clipboard.'" # Copy ssh key to clipboard
 #---------------------
 # GIT #
 #---------------------
