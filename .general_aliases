@@ -5,7 +5,7 @@
 #---------------------
 # BASH #
 #---------------------
-alias profile='vim ~/.zshrc'
+alias profile="${EDITOR} ~/.zshrc"
 alias src='source ~/.zshrc'
 alias fdir='find . -type d -name'    # Attempt to find direcotory
 alias ffil='find . -type f -name'    # Attempt to find file
