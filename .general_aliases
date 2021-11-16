@@ -153,10 +153,3 @@ function fixDist() {
     COMPOSER_MEMORY_LIMIT=-1 composer remove $1; COMPOSER_MEMORY_LIMIT=-1 composer require $1:$2
 }
 
-function checkCS() {
-    php vendor/bin/phpcpd $1
-    php vendor/bin/phpcs --standard=PSR1 $1
-    php vendor/bin/phpmd $1 text cleancode,codesize,controversial,design,naming,unusedcode
-    php vendor/bin/phpcs --standard=Magento2 --extensions=php,phtml $1
-}
-
