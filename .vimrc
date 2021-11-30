@@ -62,6 +62,7 @@ set expandtab      " Turn tabs to spaces
 set showmatch      " Show matching brackets
 "set termguicolors  " Enable true colors
 set autoread       " Reload file on external change
+set clipboard=unnamed " Text is yanked into clipboard
 
 " Allow capital version of wq
 command! Q q
