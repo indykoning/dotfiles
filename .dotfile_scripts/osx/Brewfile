@@ -1,0 +1,77 @@
+tap "elastic/tap"
+tap "henkrehorst/php"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
+# Companion library to apr, the Apache Portable Runtime library
+brew "apr-util"
+# Automatic configure script builder
+brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Tool Command Language
+brew "tcl-tk"
+# Fish completion for brew-cask
+brew "brew-cask-completion"
+# Dependency Manager for PHP
+brew "composer"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# ESP8266 and ESP32 serial bootloader utility
+brew "esptool"
+# Generic library support script
+brew "libtool"
+# This library is for the GeoIP Legacy format (dat)
+brew "geoip"
+# Distributed revision control system
+brew "git"
+# Extensions to follow Vincent Driessen's branching model
+brew "git-flow"
+# Version control system designed to be a better CVS
+brew "subversion"
+# Bidirectional operation between a Subversion repository and Git
+brew "git-svn"
+# Improved top (interactive process viewer)
+brew "htop"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Top-like query monitor for MySQL
+brew "mytop"
+# NCurses Disk Usage
+brew "ncdu"
+# Development kit for the Java programming language
+brew "openjdk@8"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Monitor data's progress through a pipe
+brew "pv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
+# Command-line tool for the Amazon S3 service
+brew "s3cmd"
+# HTTP regression testing and benchmarking utility
+brew "siege"
+# File system client based on SSH File Transfer Protocol
+brew "sshfs"
+# Programmatically correct mistyped console commands
+brew "thefuck"
+# HTTP benchmarking tool
+brew "wrk"
+# JavaScript package manager
+brew "yarn"
+# General-purpose lossless data-compression library
+brew "zlib"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Openjdk
+cask "adoptopenjdk8"
+# Android SDK component
+cask "android-platform-tools"
+# Powerline fonts
+cask "font-source-code-pro-for-powerline"
+# File system integration
+cask "osxfuse"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
