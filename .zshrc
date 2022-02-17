@@ -43,11 +43,15 @@ plugins=(
   pj
   safe-paste
   thefuck
-  timer
   yarn
   zsh-navigation-tools
   cp
 )
+
+if [ "$WARP_FEATURE_FLAG_HONOR_PS1" != 1 ]; then
+    plugins+=(timer)
+fi
+
 # Load additional plugins and configuration before loading oh-my-zsh
 [ -f $HOME/.additional_plugins ] && source $HOME/.additional_plugins
 
