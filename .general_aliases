@@ -97,14 +97,14 @@ alias pams='php artisan migrate --seed'
 #---------------------
 # MAGENTO #
 #---------------------
-alias m='bin/magento'
-alias msu='bin/magento setup:upgrade && bin/magento cache:disable full_page layout block_html'
-alias mcc='bin/magento cache:clean'
-alias mcf='bin/magento cache:flush'
-alias mca='bin/magento cache:clean && bin/magento cache:flush'
-alias cleanup2='rm -rf generated/code var/cache var/view_preprocessed pub/static; bin/magento cache:flush'
-alias mir='bin/magento indexer:reindex'
-alias msetup='(composer install --ignore-platform-reqs && bin/magento setup:upgrade)'
+alias m='php bin/magento'
+alias msu='php bin/magento setup:upgrade && php bin/magento cache:disable full_page layout block_html'
+alias mcc='php bin/magento cache:clean'
+alias mcf='php bin/magento cache:flush'
+alias mca='php bin/magento cache:clean && php bin/magento cache:flush'
+alias cleanup2='rm -rf generated/code var/cache var/view_preprocessed pub/static; php bin/magento cache:flush'
+alias mir='php bin/magento indexer:reindex'
+alias msetup='(composer install --ignore-platform-reqs && php bin/magento setup:upgrade)'
 
 #---------------------
 # GENERAL #
