@@ -7,4 +7,9 @@
 !.linux_aliases
 !.osx_aliases
 !.global_gitignore
-!.warp/workflows
+# Ignore all in warp except workflows folder
+!.warp/
+.warp/*
+!.warp/workflows/
+!.warp/workflows/*
+!.warp/workflows/**/*

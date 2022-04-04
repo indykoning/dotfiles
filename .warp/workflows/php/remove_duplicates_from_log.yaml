@@ -1,0 +1,16 @@
+name: Remove duplicates from log and sort by occurences
+command: "cat {{log_file}} | sed -e \"s/^\\[[^]]*\\]//g\" | sort | uniq -c | sort -nr | less"
+tags:
+  - shell
+  - php
+  - hosting
+description: Removes duplicates from log and shows you the most occurring ones
+arguments:
+  - name: log_file
+    description: The log file to run this on
+    default_value: "var/log/exception.log"
+author: Indy Koning
+author_url: ~
+shells:
+  - Zsh
+  - Bash

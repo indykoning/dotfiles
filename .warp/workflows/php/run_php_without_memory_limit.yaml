@@ -1,0 +1,15 @@
+name: Run PHP without a memory limit
+command: "php -d memory_limit=-1 {{command}}"
+tags:
+  - shell
+  - php
+description: Executes the command in php without a memory limit
+arguments:
+  - name: command
+    description: The command to run
+    default_value: ~
+author: Indy Koning
+author_url: ~
+shells:
+  - Zsh
+  - Bash

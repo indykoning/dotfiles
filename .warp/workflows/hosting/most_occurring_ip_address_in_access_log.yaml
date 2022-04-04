@@ -1,0 +1,15 @@
+name: Get top ip adresses in access log
+command: "cat {{log_file}} | awk '{print $1}' | sort -n | uniq -c | sort -nr | head -20"
+tags:
+  - shell
+  - hosting
+description: Get the top 10 ip adresses in the access log
+arguments:
+  - name: log_file
+    description: The log file to get the top 10 on
+    default_value: /var/log/nginx/access.log
+author: Indy Koning
+author_url: ~
+shells:
+  - Zsh
+  - Bash
