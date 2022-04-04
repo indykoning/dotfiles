@@ -1,0 +1,24 @@
+name: Rsync folder from local to server
+command: "rsync -ravu --exclude=\"*cache*\" {{source_path}} {{destination_user}}@{{destination_ip}}:{{destination_path}}"
+tags:
+  - shell
+  - hosting
+description: Copy folder over from local to a server
+arguments:
+  - name: source_path
+    description: The source path (~/<domain>/current)
+    default_value: ~
+  - name: destination_user
+    description: The destination user (forge)
+    default_value: forge
+  - name: destination_ip
+    description: The destination ip
+    default_value: ~
+  - name: destination_path
+    description: The destination path (~/<domain>/current)
+    default_value: ~
+author: Indy Koning
+author_url: ~
+shells:
+  - Zsh
+  - Bash
