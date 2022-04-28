@@ -1,0 +1,11 @@
+name: Reload Mysql
+command: "mysqld --help  1> /dev/null && service mysql reload || echo 'Error ocurred while verifying Mysql config'"
+tags:
+  - shell
+  - hosting
+description: Verify Mysql/Percona configuration and reload
+author: Indy Koning
+author_url: ~
+shells:
+  - Zsh
+  - Bash

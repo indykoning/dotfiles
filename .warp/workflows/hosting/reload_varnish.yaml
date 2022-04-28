@@ -1,0 +1,11 @@
+name: Reload Varnish
+command: "varnishd -Cf /etc/varnish/default.vcl &> /dev/null && service varnish reload || echo 'Error ocurred while verifying Varnish config'"
+tags:
+  - shell
+  - hosting
+description: Verify Varnish configuration and reload
+author: Indy Koning
+author_url: ~
+shells:
+  - Zsh
+  - Bash

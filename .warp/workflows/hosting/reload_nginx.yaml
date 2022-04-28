@@ -1,0 +1,11 @@
+name: Reload Nginx
+command: "nginx -t && service nginx reload || echo 'Error ocurred while verifying Nginx config'"
+tags:
+  - shell
+  - hosting
+description: Verify Nginx configuration and reload
+author: Indy Koning
+author_url: ~
+shells:
+  - Zsh
+  - Bash
