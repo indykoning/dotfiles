@@ -3,6 +3,7 @@
 # git config --global core.excludesfile ~/.global_gitignore
 
 *.log
+*.sql
 
 ### OSX ###
 # General
