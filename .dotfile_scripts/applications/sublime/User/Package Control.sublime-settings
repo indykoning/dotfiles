@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"Vue Syntax Highlight",
 	],
 	"installed_packages":
 	[
