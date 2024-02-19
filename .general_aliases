@@ -147,6 +147,14 @@ function clipboard() {
     [ ! -t 0 ] && clipcopy || clippaste
 }
 
+function diffclip() {
+    diff -ubB "$@" <(clipboard)
+}
+
+function clipdiff() {
+    diff -ubB <(clipboard) "$@"
+}
+
 # Manual for command
 rtfm() {
     help $@ ||
