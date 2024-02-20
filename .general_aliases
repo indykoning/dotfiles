@@ -133,7 +133,7 @@ db() {
 
 # Get dns info
 function digga() {
-	dig +nocmd "$1" any +multiline +noall +answer
+    dig +nocmd "$1" any +multiline +noall +answer
 }
 
 # Download all assets for page
