@@ -92,6 +92,9 @@ lerna-debug.log*
 .yarn-integrity
 .cache
 
+# Composer
+auth.json
+
 # Runtime data
 pids
 *.pid
