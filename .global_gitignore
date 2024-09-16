@@ -43,9 +43,14 @@ Temporary Items
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
+### LibreOffice ###
+# LibreOffice locks
+.~lock.*#
+
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
 [._]*.sw[a-p]
 [._]s[a-rt-v][a-z]
 [._]ss[a-gi-z]
@@ -57,6 +62,7 @@ Sessionx.vim
 
 # Temporary
 .netrwhist
+*~
 
 # Auto-generated tag files
 tags
@@ -71,9 +77,43 @@ tags
 ### vs code ###
 .vscode
 
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
 ### Sublime Text ###
-*.sublime-project
+# Cache files for Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Workspace files are user-specific
 *.sublime-workspace
+*.sublime-project
+
+# SFTP configuration file
+sftp-config.json
+sftp-config-alt*.json
+
+# Package control specific files
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
+
+# Language completions
 .phpintel
 *.tmlanguage.cache
 *.tmPreferences.cache
@@ -93,8 +133,12 @@ lerna-debug.log*
 .yarn-integrity
 .cache
 
+### PHP ###
 # Composer
 auth.json
+
+# PHPCS
+/wpcs/*
 
 # Runtime data
 pids
@@ -124,3 +168,24 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+### Microsoft Office ###
+*.tmp
+
+# Word temporary
+~$*.doc*
+
+# Word Auto Backup File
+Backup of *.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Visio autosave temporary files
+*.~vsd*
