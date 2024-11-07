@@ -68,6 +68,10 @@ function release() {
 alias ci='composer install'
 alias cr='composer require'
 alias grum='grumphp git:pre-commit'
+# Update packages filtered
+cuf() {
+  jq -r '.require | keys[]' composer.json | grep "$1" | tr '\n' ' ' | xargs composer update
+}
 
 #---------------------
 # YARN #
