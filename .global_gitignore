@@ -76,6 +76,7 @@ tags
 
 ### vs code ###
 .vscode
+.tinkerun
 
 # Local History for Visual Studio Code
 .history/
